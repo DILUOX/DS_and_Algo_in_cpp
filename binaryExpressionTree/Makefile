@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/Egyetem/V.felev/adatszerk/binaryExpressionTree
+CMAKE_SOURCE_DIR = /mnt/d/Egyetem/V.felev/adatszerk/binaryExpressionTree/build
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/d/Egyetem/V.felev/adatszerk/binaryExpressionTree
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named khf04
+# Target rules for targets named BinaryExpressionTree
 
 # Build rule for target.
-khf04: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 khf04
-.PHONY : khf04
+BinaryExpressionTree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BinaryExpressionTree
+.PHONY : BinaryExpressionTree
 
 # fast build rule for target.
-khf04/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/khf04.dir/build.make CMakeFiles/khf04.dir/build
-.PHONY : khf04/fast
+BinaryExpressionTree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryExpressionTree.dir/build.make CMakeFiles/BinaryExpressionTree.dir/build
+.PHONY : BinaryExpressionTree/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/khf04.dir/build.make CMakeFiles/khf04.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryExpressionTree.dir/build.make CMakeFiles/BinaryExpressionTree.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/khf04.dir/build.make CMakeFiles/khf04.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryExpressionTree.dir/build.make CMakeFiles/BinaryExpressionTree.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/khf04.dir/build.make CMakeFiles/khf04.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BinaryExpressionTree.dir/build.make CMakeFiles/BinaryExpressionTree.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... khf04"
+	@echo "... BinaryExpressionTree"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
