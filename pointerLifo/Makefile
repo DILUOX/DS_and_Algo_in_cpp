@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo/dynamic_stack
+CMAKE_SOURCE_DIR = /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo/dynamic_stack
+CMAKE_BINARY_DIR = /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo/dynamic_stack/CMakeFiles /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo/dynamic_stack//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo/CMakeFiles /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo/dynamic_stack/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Egyetem/V.felev/adatszerk/pointerLifo/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,53 +129,53 @@ dynamic_stack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/build
 .PHONY : dynamic_stack/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-stack.o: stack.cpp.o
-.PHONY : stack.o
+src/stack.o: src/stack.cpp.o
+.PHONY : src/stack.o
 
 # target to build an object file
-stack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/stack.cpp.o
-.PHONY : stack.cpp.o
+src/stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/src/stack.cpp.o
+.PHONY : src/stack.cpp.o
 
-stack.i: stack.cpp.i
-.PHONY : stack.i
+src/stack.i: src/stack.cpp.i
+.PHONY : src/stack.i
 
 # target to preprocess a source file
-stack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/stack.cpp.i
-.PHONY : stack.cpp.i
+src/stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/src/stack.cpp.i
+.PHONY : src/stack.cpp.i
 
-stack.s: stack.cpp.s
-.PHONY : stack.s
+src/stack.s: src/stack.cpp.s
+.PHONY : src/stack.s
 
 # target to generate assembly for a file
-stack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/stack.cpp.s
-.PHONY : stack.cpp.s
+src/stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamic_stack.dir/build.make CMakeFiles/dynamic_stack.dir/src/stack.cpp.s
+.PHONY : src/stack.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... dynamic_stack"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... stack.o"
-	@echo "... stack.i"
-	@echo "... stack.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/stack.o"
+	@echo "... src/stack.i"
+	@echo "... src/stack.s"
 .PHONY : help
 
 
